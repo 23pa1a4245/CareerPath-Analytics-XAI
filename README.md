@@ -147,7 +147,7 @@ CareerPath-Analytics/
 ## Live Project Deployment
 
 **Live Application:**  
-https://careerpath-analytics-starter-dyewd7crik5hdjukxrgidl.streamlit.app/
+https://careerpath-analytics-xai-gjcmudplvwx7g8kwwxkcjr.streamlit.app/
 
 ## Project Repository
 
