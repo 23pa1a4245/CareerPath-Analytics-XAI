@@ -1,0 +1,77 @@
+{
+  "profile_id": null,
+  "predicted_class": "0",
+  "predicted_class_name": "Stayed",
+  "predicted_class_probability": 0.6384928152768822,
+  "attrition_probability": 0.3615071847231178,
+  "class_probabilities": {
+    "Stayed": 0.6384928152768822,
+    "Left": 0.3615071847231178
+  },
+  "plot": "C:\\Users\\PC\\OneDrive\\Desktop\\CareerPath-Analytics-Starter\\reports\\lime\\profile_profile_lime.png",
+  "html": "C:\\Users\\PC\\OneDrive\\Desktop\\CareerPath-Analytics-Starter\\reports\\lime\\profile_profile_lime.html",
+  "csv": "C:\\Users\\PC\\OneDrive\\Desktop\\CareerPath-Analytics-Starter\\reports\\lime\\profile_profile_lime.csv",
+  "background_rows": 1470,
+  "contributions": [
+    {
+      "Feature condition": "OverTime=Yes",
+      "Contribution to predicted class": -0.11519861941422978,
+      "Direction": "Opposes prediction"
+    },
+    {
+      "Feature condition": "StockOptionLevel <= 0.00",
+      "Contribution to predicted class": -0.05566174231219547,
+      "Direction": "Opposes prediction"
+    },
+    {
+      "Feature condition": "3.00 < JobSatisfaction <= 4.00",
+      "Contribution to predicted class": 0.040822172457998344,
+      "Direction": "Supports prediction"
+    },
+    {
+      "Feature condition": "EnvironmentSatisfaction <= 2.00",
+      "Contribution to predicted class": -0.02781381695406664,
+      "Direction": "Opposes prediction"
+    },
+    {
+      "Feature condition": "NumCompaniesWorked > 4.00",
+      "Contribution to predicted class": -0.027505426476507697,
+      "Direction": "Opposes prediction"
+    },
+    {
+      "Feature condition": "JobRole=Sales Executive",
+      "Contribution to predicted class": -0.02732648051998302,
+      "Direction": "Opposes prediction"
+    },
+    {
+      "Feature condition": "Department=Sales",
+      "Contribution to predicted class": -0.027003285312113264,
+      "Direction": "Opposes prediction"
+    },
+    {
+      "Feature condition": "1.00 < JobLevel <= 2.00",
+      "Contribution to predicted class": 0.025757842903819935,
+      "Direction": "Supports prediction"
+    },
+    {
+      "Feature condition": "RelationshipSatisfaction <= 2.00",
+      "Contribution to predicted class": -0.02309770027136499,
+      "Direction": "Opposes prediction"
+    },
+    {
+      "Feature condition": "WorkLifeBalance <= 2.00",
+      "Contribution to predicted class": -0.019149446155196453,
+      "Direction": "Opposes prediction"
+    },
+    {
+      "Feature condition": "DistanceFromHome <= 2.00",
+      "Contribution to predicted class": 0.01877587172812127,
+      "Direction": "Supports prediction"
+    },
+    {
+      "Feature condition": "BusinessTravel=Travel_Rarely",
+      "Contribution to predicted class": 0.01418134259574349,
+      "Direction": "Supports prediction"
+    }
+  ]
+}

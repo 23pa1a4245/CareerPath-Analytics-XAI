@@ -1,0 +1,13 @@
+Feature condition,Contribution to predicted class,Direction
+OverTime=Yes,-0.11519861941422978,Opposes prediction
+StockOptionLevel <= 0.00,-0.05566174231219547,Opposes prediction
+3.00 < JobSatisfaction <= 4.00,0.040822172457998344,Supports prediction
+EnvironmentSatisfaction <= 2.00,-0.02781381695406664,Opposes prediction
+NumCompaniesWorked > 4.00,-0.027505426476507697,Opposes prediction
+JobRole=Sales Executive,-0.02732648051998302,Opposes prediction
+Department=Sales,-0.027003285312113264,Opposes prediction
+1.00 < JobLevel <= 2.00,0.025757842903819935,Supports prediction
+RelationshipSatisfaction <= 2.00,-0.02309770027136499,Opposes prediction
+WorkLifeBalance <= 2.00,-0.019149446155196453,Opposes prediction
+DistanceFromHome <= 2.00,0.01877587172812127,Supports prediction
+BusinessTravel=Travel_Rarely,0.01418134259574349,Supports prediction

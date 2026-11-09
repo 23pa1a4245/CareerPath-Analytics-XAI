@@ -1,0 +1,40 @@
+Feature,Transformed profile value,SHAP contribution to attrition probability,Direction
+DailyRate,1.4643526293314482,-0.06018116081987035,Decreases attrition probability
+OverTime_Yes,1.0,0.056043623063826625,Increases attrition probability
+OverTime_No,0.0,0.051909889190475525,Increases attrition probability
+JobLevel,-0.963849398612731,0.04711424150324151,Increases attrition probability
+DistanceFromHome,-0.7759827570063708,-0.03302928661210232,Decreases attrition probability
+YearsAtCompany,0.15680948050364207,-0.028013822472695227,Decreases attrition probability
+JobRole_Research Scientist,1.0,-0.02495577051650797,Decreases attrition probability
+BusinessTravel_Travel_Frequently,1.0,0.024046463566025737,Increases attrition probability
+StockOptionLevel,-0.9294880678862311,0.020895574127855754,Increases attrition probability
+YearsInCurrentRole,0.7947855299893976,-0.01957282443036827,Decreases attrition probability
+EnvironmentSatisfaction,1.1628109706439178,-0.019470740460225115,Decreases attrition probability
+TotalWorkingYears,-0.42099848602916917,-0.01562273801772023,Decreases attrition probability
+MonthlyIncome,-0.7666002772125646,-0.014411803751164902,Decreases attrition probability
+JobInvolvement,0.3606916646420029,-0.013547331621536313,Decreases attrition probability
+YearsSinceLastPromotion,0.2616059351419662,-0.012254508061136583,Decreases attrition probability
+Department_Sales,0.0,-0.01161118581814447,Decreases attrition probability
+MonthlyRate,1.257386018445423,-0.010283375721678074,Decreases attrition probability
+JobRole_Laboratory Technician,0.0,-0.009389944488302809,Decreases attrition probability
+Department_Research & Development,1.0,-0.009268996740464401,Decreases attrition probability
+TrainingTimesLastYear,0.16377156441392002,-0.009031830482414545,Decreases attrition probability
+RelationshipSatisfaction,0.2543967150488462,-0.00895342553851066,Decreases attrition probability
+JobRole_Sales Executive,0.0,-0.0081707856836155,Decreases attrition probability
+Education,1.0446404847766388,-0.007708071966200158,Decreases attrition probability
+WorkLifeBalance,0.3399468712324401,-0.00743790633487265,Decreases attrition probability
+BusinessTravel_Travel_Rarely,0.0,0.0050526905829577475,Increases attrition probability
+HourlyRate,-0.47114793009992095,-0.0050009611898680865,Decreases attrition probability
+NumCompaniesWorked,-0.6648540593230698,-0.003986147588464246,Decreases attrition probability
+PercentSalaryHike,-1.162781465796632,-0.0038002149945961265,Decreases attrition probability
+JobRole_Healthcare Representative,0.0,0.0035717601337422393,Increases attrition probability
+YearsWithCurrManager,-1.1512005691856357,0.0032446983734593293,Increases attrition probability
+BusinessTravel_Non-Travel,0.0,0.002028021884725195,Increases attrition probability
+JobRole_Manager,0.0,0.0018193493358720056,Increases attrition probability
+JobRole_Manufacturing Director,0.0,0.0011567780934268787,Increases attrition probability
+JobSatisfaction,0.24344259591220865,0.0010837471946443407,Increases attrition probability
+JobRole_Sales Representative,0.0,-0.001031879425943406,Decreases attrition probability
+JobRole_Research Director,0.0,0.00036163145679415616,Increases attrition probability
+JobRole_Human Resources,0.0,-0.00014755295166631735,Decreases attrition probability
+Department_Human Resources,0.0,-8.678638154421256e-05,Decreases attrition probability
+PerformanceRating,-0.4266963598774517,-7.856108104999051e-05,Decreases attrition probability

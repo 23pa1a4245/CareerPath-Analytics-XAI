@@ -1,0 +1,77 @@
+{
+  "profile_id": "5",
+  "predicted_class": "0",
+  "predicted_class_name": "Stayed",
+  "predicted_class_probability": 0.6188927377534079,
+  "attrition_probability": 0.38110726224659236,
+  "class_probabilities": {
+    "Stayed": 0.6188927377534079,
+    "Left": 0.38110726224659236
+  },
+  "plot": "C:\\Users\\PC\\OneDrive\\Desktop\\CareerPath-Analytics-Starter\\reports\\lime\\profile_5_lime.png",
+  "html": "C:\\Users\\PC\\OneDrive\\Desktop\\CareerPath-Analytics-Starter\\reports\\lime\\profile_5_lime.html",
+  "csv": "C:\\Users\\PC\\OneDrive\\Desktop\\CareerPath-Analytics-Starter\\reports\\lime\\profile_5_lime.csv",
+  "background_rows": 1470,
+  "contributions": [
+    {
+      "Feature condition": "OverTime=Yes",
+      "Contribution to predicted class": -0.11639562743948215,
+      "Direction": "Opposes prediction"
+    },
+    {
+      "Feature condition": "StockOptionLevel <= 0.00",
+      "Contribution to predicted class": -0.055146053594992354,
+      "Direction": "Opposes prediction"
+    },
+    {
+      "Feature condition": "MonthlyIncome <= 2911.00",
+      "Contribution to predicted class": -0.05228897550627062,
+      "Direction": "Opposes prediction"
+    },
+    {
+      "Feature condition": "JobLevel <= 1.00",
+      "Contribution to predicted class": -0.04505036874320451,
+      "Direction": "Opposes prediction"
+    },
+    {
+      "Feature condition": "BusinessTravel=Travel_Frequently",
+      "Contribution to predicted class": -0.0383374151813786,
+      "Direction": "Opposes prediction"
+    },
+    {
+      "Feature condition": "Department=Research & Development",
+      "Contribution to predicted class": 0.025942720719411547,
+      "Direction": "Supports prediction"
+    },
+    {
+      "Feature condition": "3.00 < EnvironmentSatisfaction <= 4.00",
+      "Contribution to predicted class": 0.021988569337700138,
+      "Direction": "Supports prediction"
+    },
+    {
+      "Feature condition": "NumCompaniesWorked <= 1.00",
+      "Contribution to predicted class": 0.01635932248175607,
+      "Direction": "Supports prediction"
+    },
+    {
+      "Feature condition": "2.00 < WorkLifeBalance <= 3.00",
+      "Contribution to predicted class": 0.01519542694364868,
+      "Direction": "Supports prediction"
+    },
+    {
+      "Feature condition": "YearsWithCurrManager <= 2.00",
+      "Contribution to predicted class": -0.014888345378674126,
+      "Direction": "Opposes prediction"
+    },
+    {
+      "Feature condition": "2.00 < JobInvolvement <= 3.00",
+      "Contribution to predicted class": 0.01476220474245343,
+      "Direction": "Supports prediction"
+    },
+    {
+      "Feature condition": "DailyRate > 1157.00",
+      "Contribution to predicted class": 0.013607166815229086,
+      "Direction": "Supports prediction"
+    }
+  ]
+}

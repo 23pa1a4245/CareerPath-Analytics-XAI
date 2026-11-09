@@ -1,0 +1,61 @@
+# ==========================================
+# CareerPath Analytics - Git Ignore
+# ==========================================
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary and log files
+*.log
+*.tmp
+*.bak
+
+# Python testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local backup application file
+app_backup_before_upgrade.py
+
+# Dataset backup files (keep main hr_data.csv)
+hr_data_original_backup.csv
+hr_data_expanded.csv
+hr_data_expanded_backup.csv
+
+# Exclude only the two requested files
+UPGRADE_STEPS.txt
+VIVA_QUESTIONS.md
+
+# Generated model artifacts
+# Keep models/.gitkeep; model files can be regenerated
+models/*.joblib
+models/*.pkl
+models/*.csv
+models/model_metrics.json
+
+# Do not ignore the main application, dataset,
+# analysis scripts, or reports.

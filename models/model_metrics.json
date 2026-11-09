@@ -1,0 +1,142 @@
+{
+  "selected_model": "Random Forest",
+  "target": "Attrition (Yes=1, No=0)",
+  "test_size": 0.25,
+  "random_state": 42,
+  "split_strategy": "GroupShuffleSplit by identical feature profile",
+  "training_rows": 11959,
+  "testing_rows": 4041,
+  "feature_columns": [
+    "BusinessTravel",
+    "DailyRate",
+    "Department",
+    "DistanceFromHome",
+    "Education",
+    "EnvironmentSatisfaction",
+    "HourlyRate",
+    "JobInvolvement",
+    "JobLevel",
+    "JobRole",
+    "JobSatisfaction",
+    "MonthlyIncome",
+    "MonthlyRate",
+    "NumCompaniesWorked",
+    "OverTime",
+    "PercentSalaryHike",
+    "PerformanceRating",
+    "RelationshipSatisfaction",
+    "StockOptionLevel",
+    "TotalWorkingYears",
+    "TrainingTimesLastYear",
+    "WorkLifeBalance",
+    "YearsAtCompany",
+    "YearsInCurrentRole",
+    "YearsSinceLastPromotion",
+    "YearsWithCurrManager"
+  ],
+  "excluded_fields": [
+    "Attrition",
+    "EmployeeNumber",
+    "EmployeeCount",
+    "Over18",
+    "StandardHours",
+    "Age",
+    "Gender",
+    "MaritalStatus",
+    "EducationField"
+  ],
+  "results": {
+    "Logistic Regression": {
+      "accuracy": 0.751051719871319,
+      "balanced_accuracy": 0.7228765155816828,
+      "precision": 0.33930024410089504,
+      "recall": 0.6824877250409165,
+      "f1": 0.4532608695652174,
+      "roc_auc": 0.8021620151450808,
+      "confusion_matrix": [
+        [
+          2618,
+          812
+        ],
+        [
+          194,
+          417
+        ]
+      ],
+      "classification_report": {
+        "Stayed": {
+          "precision": 0.9310099573257468,
+          "recall": 0.763265306122449,
+          "f1-score": 0.8388337071451458,
+          "support": 3430.0
+        },
+        "Left": {
+          "precision": 0.33930024410089504,
+          "recall": 0.6824877250409165,
+          "f1-score": 0.4532608695652174,
+          "support": 611.0
+        },
+        "accuracy": 0.751051719871319,
+        "macro avg": {
+          "precision": 0.6351551007133209,
+          "recall": 0.7228765155816828,
+          "f1-score": 0.6460472883551815,
+          "support": 4041.0
+        },
+        "weighted avg": {
+          "precision": 0.8415433315449042,
+          "recall": 0.751051719871319,
+          "f1-score": 0.7805350177708977,
+          "support": 4041.0
+        }
+      }
+    },
+    "Random Forest": {
+      "accuracy": 0.8760207869339273,
+      "balanced_accuracy": 0.6989707643637301,
+      "precision": 0.6267281105990783,
+      "recall": 0.4451718494271686,
+      "f1": 0.5205741626794258,
+      "roc_auc": 0.8408602253152839,
+      "confusion_matrix": [
+        [
+          3268,
+          162
+        ],
+        [
+          339,
+          272
+        ]
+      ],
+      "classification_report": {
+        "Stayed": {
+          "precision": 0.9060160798447463,
+          "recall": 0.9527696793002915,
+          "f1-score": 0.9288048884467813,
+          "support": 3430.0
+        },
+        "Left": {
+          "precision": 0.6267281105990783,
+          "recall": 0.4451718494271686,
+          "f1-score": 0.5205741626794258,
+          "support": 611.0
+        },
+        "accuracy": 0.8760207869339273,
+        "macro avg": {
+          "precision": 0.7663720952219123,
+          "recall": 0.6989707643637301,
+          "f1-score": 0.7246895255631036,
+          "support": 4041.0
+        },
+        "weighted avg": {
+          "precision": 0.8637876836039388,
+          "recall": 0.8760207869339273,
+          "f1-score": 0.8670803218929941,
+          "support": 4041.0
+        }
+      }
+    }
+  },
+  "dataset_limitations": "The dataset contains 1,470 original records and 14,530 resampled profiles with assigned identifiers. It does not represent 16,000 independent employee observations. Grouped evaluation reduces identical-profile leakage but cannot establish real-world generalization.",
+  "intended_use": "Educational demonstration only. Not for real employment decisions or individual employee assessment."
+}

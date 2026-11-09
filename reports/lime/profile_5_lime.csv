@@ -1,0 +1,13 @@
+Feature condition,Contribution to predicted class,Direction
+OverTime=Yes,-0.11639562743948215,Opposes prediction
+StockOptionLevel <= 0.00,-0.055146053594992354,Opposes prediction
+MonthlyIncome <= 2911.00,-0.05228897550627062,Opposes prediction
+JobLevel <= 1.00,-0.04505036874320451,Opposes prediction
+BusinessTravel=Travel_Frequently,-0.0383374151813786,Opposes prediction
+Department=Research & Development,0.025942720719411547,Supports prediction
+3.00 < EnvironmentSatisfaction <= 4.00,0.021988569337700138,Supports prediction
+NumCompaniesWorked <= 1.00,0.01635932248175607,Supports prediction
+2.00 < WorkLifeBalance <= 3.00,0.01519542694364868,Supports prediction
+YearsWithCurrManager <= 2.00,-0.014888345378674126,Opposes prediction
+2.00 < JobInvolvement <= 3.00,0.01476220474245343,Supports prediction
+DailyRate > 1157.00,0.013607166815229086,Supports prediction

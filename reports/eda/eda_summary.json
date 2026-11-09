@@ -1,0 +1,11 @@
+{
+    "dataset_source": "hr_data_original_backup.csv",
+    "rows": 1470,
+    "columns": 35,
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "attrition_distribution": {
+        "No": 1233,
+        "Yes": 237
+    }
+}

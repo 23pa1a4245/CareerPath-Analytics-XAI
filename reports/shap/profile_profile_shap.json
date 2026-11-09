@@ -1,0 +1,245 @@
+{
+  "profile_id": null,
+  "positive_class": "1",
+  "predicted_class": "0",
+  "attrition_probability": 0.36150718472311777,
+  "base_value": 0.49982640689020785,
+  "plot": "C:\\Users\\PC\\OneDrive\\Desktop\\CareerPath-Analytics-Starter\\reports\\shap\\profile_profile_shap_waterfall.png",
+  "csv": "C:\\Users\\PC\\OneDrive\\Desktop\\CareerPath-Analytics-Starter\\reports\\shap\\profile_profile_shap.csv",
+  "contributions": [
+    {
+      "Feature": "JobSatisfaction",
+      "Transformed profile value": 1.1495521522502432,
+      "SHAP contribution to attrition probability": -0.061956324090059536,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "DistanceFromHome",
+      "Transformed profile value": -1.0202119801302802,
+      "SHAP contribution to attrition probability": -0.05383787622247819,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "StockOptionLevel",
+      "Transformed profile value": -0.9294880678862311,
+      "SHAP contribution to attrition probability": 0.04281792728545228,
+      "Direction": "Increases attrition probability"
+    },
+    {
+      "Feature": "OverTime_Yes",
+      "Transformed profile value": 1.0,
+      "SHAP contribution to attrition probability": 0.04067581519943394,
+      "Direction": "Increases attrition probability"
+    },
+    {
+      "Feature": "JobLevel",
+      "Transformed profile value": -0.07622619223589043,
+      "SHAP contribution to attrition probability": -0.03619370959483895,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "MonthlyIncome",
+      "Transformed profile value": -0.12255159971230178,
+      "SHAP contribution to attrition probability": -0.03615671916453358,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "OverTime_No",
+      "Transformed profile value": 0.0,
+      "SHAP contribution to attrition probability": 0.034209414875491465,
+      "Direction": "Increases attrition probability"
+    },
+    {
+      "Feature": "DailyRate",
+      "Transformed profile value": 0.750050800823055,
+      "SHAP contribution to attrition probability": -0.023715203364903365,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "YearsWithCurrManager",
+      "Transformed profile value": 0.262880205572578,
+      "SHAP contribution to attrition probability": -0.02229147262179064,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "JobRole_Sales Executive",
+      "Transformed profile value": 1.0,
+      "SHAP contribution to attrition probability": 0.01800819651543598,
+      "Direction": "Increases attrition probability"
+    },
+    {
+      "Feature": "WorkLifeBalance",
+      "Transformed profile value": -2.4560810744819705,
+      "SHAP contribution to attrition probability": 0.017547938024832677,
+      "Direction": "Increases attrition probability"
+    },
+    {
+      "Feature": "YearsSinceLastPromotion",
+      "Transformed profile value": -0.6650958949417937,
+      "SHAP contribution to attrition probability": -0.017408146843786266,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "YearsAtCompany",
+      "Transformed profile value": -0.16515542246537773,
+      "SHAP contribution to attrition probability": -0.016900594895721655,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "Department_Sales",
+      "Transformed profile value": 1.0,
+      "SHAP contribution to attrition probability": 0.015985726751817152,
+      "Direction": "Increases attrition probability"
+    },
+    {
+      "Feature": "JobInvolvement",
+      "Transformed profile value": 0.3606916646420029,
+      "SHAP contribution to attrition probability": -0.014016988989078724,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "BusinessTravel_Travel_Frequently",
+      "Transformed profile value": 0.0,
+      "SHAP contribution to attrition probability": -0.011714754701962229,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "RelationshipSatisfaction",
+      "Transformed profile value": -1.6035149278636118,
+      "SHAP contribution to attrition probability": 0.010968949616220712,
+      "Direction": "Increases attrition probability"
+    },
+    {
+      "Feature": "YearsInCurrentRole",
+      "Transformed profile value": -0.045037768671386987,
+      "SHAP contribution to attrition probability": -0.010448010227433994,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "HourlyRate",
+      "Transformed profile value": 1.3701624099424616,
+      "SHAP contribution to attrition probability": -0.00965120659358064,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "JobRole_Laboratory Technician",
+      "Transformed profile value": 0.0,
+      "SHAP contribution to attrition probability": -0.008726995861271783,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "MonthlyRate",
+      "Transformed profile value": 0.7370247689306897,
+      "SHAP contribution to attrition probability": -0.007274934503538162,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "Department_Research & Development",
+      "Transformed profile value": 0.0,
+      "SHAP contribution to attrition probability": 0.00700672671518009,
+      "Direction": "Increases attrition probability"
+    },
+    {
+      "Feature": "TotalWorkingYears",
+      "Transformed profile value": -0.42099848602916917,
+      "SHAP contribution to attrition probability": -0.006642668321246643,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "NumCompaniesWorked",
+      "Transformed profile value": 2.1610879497204514,
+      "SHAP contribution to attrition probability": 0.006308676815735058,
+      "Direction": "Increases attrition probability"
+    },
+    {
+      "Feature": "Education",
+      "Transformed profile value": -0.8984119388089932,
+      "SHAP contribution to attrition probability": -0.006024322075668076,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "JobRole_Research Scientist",
+      "Transformed profile value": 0.0,
+      "SHAP contribution to attrition probability": 0.0031528629446538627,
+      "Direction": "Increases attrition probability"
+    },
+    {
+      "Feature": "JobRole_Healthcare Representative",
+      "Transformed profile value": 0.0,
+      "SHAP contribution to attrition probability": 0.0028254417653809562,
+      "Direction": "Increases attrition probability"
+    },
+    {
+      "Feature": "BusinessTravel_Non-Travel",
+      "Transformed profile value": 0.0,
+      "SHAP contribution to attrition probability": 0.002185324256957639,
+      "Direction": "Increases attrition probability"
+    },
+    {
+      "Feature": "BusinessTravel_Travel_Rarely",
+      "Transformed profile value": 1.0,
+      "SHAP contribution to attrition probability": -0.0021189349605451714,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "JobRole_Manager",
+      "Transformed profile value": 0.0,
+      "SHAP contribution to attrition probability": 0.0018365000326717095,
+      "Direction": "Increases attrition probability"
+    },
+    {
+      "Feature": "EnvironmentSatisfaction",
+      "Transformed profile value": -0.6752772453273482,
+      "SHAP contribution to attrition probability": 0.0016771605770224845,
+      "Direction": "Increases attrition probability"
+    },
+    {
+      "Feature": "JobRole_Sales Representative",
+      "Transformed profile value": 0.0,
+      "SHAP contribution to attrition probability": -0.0010170463164646682,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "PercentSalaryHike",
+      "Transformed profile value": -1.162781465796632,
+      "SHAP contribution to attrition probability": 0.0009702526184624187,
+      "Direction": "Increases attrition probability"
+    },
+    {
+      "Feature": "TrainingTimesLastYear",
+      "Transformed profile value": -2.1706076236981997,
+      "SHAP contribution to attrition probability": 0.0008784183224384727,
+      "Direction": "Increases attrition probability"
+    },
+    {
+      "Feature": "JobRole_Manufacturing Director",
+      "Transformed profile value": 0.0,
+      "SHAP contribution to attrition probability": 0.0008642648078316727,
+      "Direction": "Increases attrition probability"
+    },
+    {
+      "Feature": "JobRole_Research Director",
+      "Transformed profile value": 0.0,
+      "SHAP contribution to attrition probability": 0.00045243401806951055,
+      "Direction": "Increases attrition probability"
+    },
+    {
+      "Feature": "JobRole_Human Resources",
+      "Transformed profile value": 0.0,
+      "SHAP contribution to attrition probability": -0.00040842485950989225,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "PerformanceRating",
+      "Transformed profile value": -0.4266963598774517,
+      "SHAP contribution to attrition probability": -0.0002196861252414108,
+      "Direction": "Decreases attrition probability"
+    },
+    {
+      "Feature": "Department_Human Resources",
+      "Transformed profile value": 0.0,
+      "SHAP contribution to attrition probability": 3.2767023475357414e-05,
+      "Direction": "Increases attrition probability"
+    }
+  ]
+}
