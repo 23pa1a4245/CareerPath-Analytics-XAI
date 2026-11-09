@@ -143,6 +143,14 @@ CareerPath-Analytics/
 └── models/
 ```
 
-## Disclaimer
 
-This project is intended for educational and analytical purposes. Predictions should not be used as the sole basis for employment or workforce decisions.
+## Live Project Deployment
+
+**Live Application:**  
+https://careerpath-analytics-starter-dyewd7crik5hdjukxrgidl.streamlit.app/
+
+## Project Repository
+
+**GitHub Repository:**  
+https://github.com/23pa1a4245/careerpathanalysis
+
