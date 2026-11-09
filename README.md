@@ -152,5 +152,5 @@ https://careerpath-analytics-xai-gjcmudplvwx7g8kwwxkcjr.streamlit.app/
 ## Project Repository
 
 **GitHub Repository:**  
-https://github.com/23pa1a4245/careerpathanalysis
+https://github.com/23pa1a4245/CareerPath-Analytics-XAI
 
