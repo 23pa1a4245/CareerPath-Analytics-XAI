@@ -37,17 +37,15 @@ The model training process uses grouped splitting to prevent identical employee 
 
 The project uses an IBM HR Analytics-style employee dataset.
 
-**Important limitation:** The expanded dataset contains resampled employee profiles. Although employee IDs are unique, many employee profiles repeat. These repeated records are not independent employee observations. Therefore, model evaluation results are educational and should not be interpreted as proof of real-world predictive performance.
-
-The dataset is not included in this repository. Place a compatible dataset named `hr_data.csv` in the project root before running the application or training the models.
+The repository includes `hr_data.csv` and the trained model artifacts. The dataset contains resampled employee profiles; repeated profiles are not independent observations. Model evaluation results are educational and should not be interpreted as proof of real-world predictive performance.
 
 ## Installation and Setup
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/23pa1a4245/CareerPath-Analytics.git
-cd CareerPath-Analytics
+git clone https://github.com/23pa1a4245/CareerPath-Analytics-XAI.git
+cd CareerPath-Analytics-XAI
 ```
 
 Install dependencies:
@@ -59,9 +57,7 @@ pip install -r requirements.txt
 Use Python 3.11 for the broadest compatibility with the SHAP and LIME dependencies.
 The `requirements.txt` file includes both packages.
 
-Add your compatible `hr_data.csv` file to the project folder.
-
-Train the models:
+The included model artifacts are ready to use. To retrain them after changing the dataset:
 
 ```bash
 python train_model.py
@@ -119,9 +115,11 @@ git commit -m "Add SHAP and LIME attrition explanations"
 git push
 ```
 
-In Streamlit Community Cloud, open the deployed app and trigger a redeploy
-(or use **Manage app > Reboot**). Confirm the app points to the updated branch
-and entry point `app.py`; Cloud installs SHAP and LIME from `requirements.txt`.
+To deploy, sign in at [Streamlit Community Cloud](https://share.streamlit.io/), choose
+**Create app > Deploy a public app from GitHub**, and select
+`23pa1a4245/CareerPath-Analytics-XAI`, branch `main`, and entry point `app.py`.
+Cloud installs SHAP and LIME from `requirements.txt`. Push future changes to `main`
+to trigger a redeploy.
 
 ## Project Structure
 

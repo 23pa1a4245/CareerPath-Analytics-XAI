@@ -937,6 +937,96 @@ elif page == "ML Attrition Lab":
                     "class; negative bars oppose it. SHAP and LIME use different methods."
                 )
 
+elif page == "Recommendations & Limitations":
+    st.subheader("Recommendations & Limitations")
+    st.caption(
+        "Observations and follow-ups below reflect the current department and tenure filters."
+    )
+
+    if data.empty:
+        st.info("No employee records match the current filters.")
+    else:
+        attrition_labels = data["Attrition"].astype("string").str.strip().str.lower()
+        valid_attrition = attrition_labels.isin(["yes", "no"])
+        metrics = st.columns(2)
+        metrics[0].metric("Employees in filtered view", f"{len(data):,}")
+        if valid_attrition.any():
+            observed_attrition = attrition_labels[valid_attrition].eq("yes").mean() * 100
+            metrics[1].metric("Observed attrition in view", f"{observed_attrition:.1f}%")
+        else:
+            metrics[1].metric("Observed attrition in view", "Unavailable")
+
+        st.markdown("### Data-informed observations")
+        if valid_attrition.any() and "Department" in data.columns:
+            department_rates = pd.DataFrame({
+                "Department": data.loc[valid_attrition, "Department"],
+                "Attrition": attrition_labels[valid_attrition].eq("yes").astype(float),
+            }).groupby("Department", as_index=False).agg(
+                Employees=("Attrition", "size"),
+                ObservedAttritionRate=("Attrition", "mean"),
+            )
+            department_rates["ObservedAttritionRate"] *= 100
+            department_rates = department_rates.sort_values(
+                "ObservedAttritionRate", ascending=False
+            )
+            st.dataframe(
+                department_rates.round(1),
+                use_container_width=True,
+                hide_index=True,
+            )
+            highest_rate = department_rates.iloc[0]
+            st.write(
+                f"- **{highest_rate['Department']}** has the highest observed attrition "
+                f"rate in this filtered view ({highest_rate['ObservedAttritionRate']:.1f}% "
+                f"across {int(highest_rate['Employees'])} records)."
+            )
+
+        if "TrainingTimesLastYear" in data.columns and "Department" in data.columns:
+            training = data.assign(
+                TrainingTimesLastYear=pd.to_numeric(
+                    data["TrainingTimesLastYear"], errors="coerce"
+                )
+            ).groupby("Department", as_index=False).agg(
+                AverageTrainingSessions=("TrainingTimesLastYear", "mean")
+            ).dropna(subset=["AverageTrainingSessions"])
+            if len(training) > 1:
+                lowest_training = training.loc[
+                    training["AverageTrainingSessions"].idxmin()
+                ]
+                st.write(
+                    f"- **{lowest_training['Department']}** has the lowest average "
+                    f"reported training frequency ({lowest_training['AverageTrainingSessions']:.1f} "
+                    "sessions in the previous year)."
+                )
+
+        st.markdown("### Actionable follow-ups")
+        st.write(
+            "- Review department-level patterns with HR and department leads before "
+            "changing workforce plans."
+        )
+        st.write(
+            "- Check whether training access and role-specific development support are "
+            "consistent across departments."
+        )
+        st.write(
+            "- Use voluntary feedback and longitudinal records to investigate retention "
+            "patterns; do not infer causes from these descriptive associations."
+        )
+
+    st.markdown("### Limitations")
+    st.write(
+        "- This is a static snapshot, not a timeline of employee histories; it cannot "
+        "establish actual promotion sequences or outcomes."
+    )
+    st.write(
+        "- Resampled or repeated employee profiles are not independent observations, so "
+        "model metrics and group patterns are educational signals, not population estimates."
+    )
+    st.write(
+        "- Attrition predictions and explanations describe model behavior and must not "
+        "be used to make employment decisions about individuals."
+    )
+
 elif page == "Career Assistant":
     st.title("✧ Career Assistant")
     st.caption(
